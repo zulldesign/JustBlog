@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog", "JustBlog\JustBl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog.Tests", "JustBlog.Tests\JustBlog.Tests.csproj", "{B8601A11-564B-4C14-A333-8920B0C59C3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog.Core", "..\..\..\..\Downloads\JustBlog_SourceCode\JustBlog\src\JustBlog\JustBlog.Core\JustBlog.Core.csproj", "{787A6593-DB4C-4D2A-9AE7-9848BDC7D2FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{B8601A11-564B-4C14-A333-8920B0C59C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8601A11-564B-4C14-A333-8920B0C59C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8601A11-564B-4C14-A333-8920B0C59C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787A6593-DB4C-4D2A-9AE7-9848BDC7D2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787A6593-DB4C-4D2A-9AE7-9848BDC7D2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787A6593-DB4C-4D2A-9AE7-9848BDC7D2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787A6593-DB4C-4D2A-9AE7-9848BDC7D2FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
