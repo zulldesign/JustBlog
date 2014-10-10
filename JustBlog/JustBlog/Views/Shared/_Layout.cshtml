@@ -1,67 +1,48 @@
-﻿@using System.Configuration
-
-@{
-  Layout = null;
-  var action = ((string)ViewContext.RouteData.Values["Action"]).ToLower();
-
-  var blogTitle = ConfigurationManager.AppSettings["BlogTitle"];
-  var feedBurnerUrl = ConfigurationManager.AppSettings["FeedBurnerUrl"];
-}
-
-<!DOCTYPE html>
-
-<html>
-  
-  <head>
-    
-    <meta name="viewport" content="width=device-width" />
-
-    <title>@ViewBag.Title</title>
-
-    <meta name="keywords" content="@(ViewBag.Keywords ?? ConfigurationManager.AppSettings["MetaKeywords"])" />
-    <meta name="description" content="@(ViewBag.Description ?? ConfigurationManager.AppSettings["MetaDescription"])"/>
-    <meta name="author" content="@ConfigurationManager.AppSettings["Author"]"/>
-
-    @Styles.Render("~/Content/themes/simple/css")
-    @Scripts.Render("~/jquery", "~/jqueryval", "~/jqueryunobtrusiveval", "~/js")
-  </head>
-  <body>
-    
-    <div id="main">
-      
-      <!-- Header & Navigation -->
-      <div id="header">
-        <div id="logo">
-          <div id="logo_text">
-            <h1><a href="/"><span class="logo_colour">@blogTitle</span></a></h1>
-            <h2>Writings, Experiments and More...</h2>
-          </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
         </div>
-        <div id="menubar">
-          <ul id="menu">
-            <li class="@(action == "posts" ? "selected" : "")">@Html.ActionLink("Posts", "Posts")</li>
-            <li class="@(action == "contact" ? "selected" : "")">@Html.ActionLink("Contact", "Contact")</li>
-            <li class="@(action == "aboutme" ? "selected" : "")">@Html.ActionLink("About Me", "Aboutme")</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Main Content -->
-      <div id="site_content">
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
 
-        <div class="feeddiv">
-          <a href="@feedBurnerUrl" title="Subscribe to my blog">Subscribe to my blog</a>
-        </div>
-
-        @Html.Partial("_Search")
-        @RenderBody()
-        @Html.Action("Sidebars")
-      </div>
-      
-      <!-- Footer -->
-      <div id="footer">
-        Copyright © @DateTime.Now.Year @blogTitle All Rights Reserved 
-      </div>
-    </div>
-  </body>
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
 </html>

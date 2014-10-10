@@ -1,12 +1,13 @@
-﻿using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 
 namespace JustBlog
 {
-  public class FilterConfig
-  {
-    public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+    public class FilterConfig
     {
-      filters.Add(new HandleErrorAttribute());
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
     }
-  }
 }
