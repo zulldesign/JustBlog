@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog", "JustBlog\JustBlog.csproj", "{8D20BD37-8748-4761-87FD-DFFECDC40019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustBlog.Tests", "JustBlog.Tests\JustBlog.Tests.csproj", "{9AFD25F5-B5FF-442C-AD0D-03744CA44475}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D20BD37-8748-4761-87FD-DFFECDC40019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D20BD37-8748-4761-87FD-DFFECDC40019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D20BD37-8748-4761-87FD-DFFECDC40019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D20BD37-8748-4761-87FD-DFFECDC40019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFD25F5-B5FF-442C-AD0D-03744CA44475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFD25F5-B5FF-442C-AD0D-03744CA44475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFD25F5-B5FF-442C-AD0D-03744CA44475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFD25F5-B5FF-442C-AD0D-03744CA44475}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\bin\Debug\JustBlog.Tests.dll.config
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\bin\Debug\JustBlog.Tests.dll
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\bin\Debug\JustBlog.Tests.pdb
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\bin\Debug\JustBlog.dll
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\bin\Debug\JustBlog.pdb
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\obj\Debug\JustBlog.Tests.csprojResolveAssemblyReference.cache
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\obj\Debug\JustBlog.Tests.dll
+C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog.Tests\obj\Debug\JustBlog.Tests.pdb
