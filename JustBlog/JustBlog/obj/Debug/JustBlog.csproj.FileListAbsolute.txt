@@ -1,5 +1,0 @@
-C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog\bin\JustBlog.dll
-C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog\bin\JustBlog.pdb
-C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog\obj\Debug\JustBlog.csprojResolveAssemblyReference.cache
-C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog\obj\Debug\JustBlog.dll
-C:\Users\User\Workspace\JustBlog\JustBlog\JustBlog\obj\Debug\JustBlog.pdb
